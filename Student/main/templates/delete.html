@@ -1,0 +1,27 @@
+{% include 'header.html' %}
+<!-- <span>Success</span>
+<a href = 'index.html'>return</a> -->
+<br>
+<div class = 'container'>
+  <h3>Delete a student</h3>
+  <div class = 'container text-center'>
+    <form action= '#' method = 'POST'>
+    {% csrf_token %}
+      <label for = 'name'>Name: </label>
+      <input type='text' name = 'name_text' id='name'/>
+
+      <label for = 'uin'>UIN: </label>
+      <input type='text' name = 'uin_text' id='uin'/>
+
+      <label for = 'year'>Year: </label>
+      <input type='text' name = 'year_text' id='year'/>
+
+      <input type = 'submit' value = 'Delete'>
+    </form>
+  </div>
+</div>
+<br>
+
+
+		
+{% include 'footer.html' %}
